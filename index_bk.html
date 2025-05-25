@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Ty TNHH Quốc tế luật Đông Phương</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            /* Màu chính - Chuyển sang tone xanh navy chuyên nghiệp */
+            --color-primary: #1a2b4c;          /* Xanh navy */
+            --color-primary-dark: #0f1a2e;     /* Xanh navy đậm */
+            --color-primary-light: #2c3e5d;    /* Xanh navy nhạt */
+            
+            /* Màu phụ - Chuyển sang tone vàng gold */
+            --color-secondary: #c4a35a;        /* Vàng gold */
+            --color-secondary-light: #d4b36a;  /* Vàng gold nhạt */
+            
+            /* Màu nền */
+            --color-bg-light: #ffffff;
+            --color-bg-gray: #f5f7fa;
+            
+            /* Màu chữ - Tăng độ tương phản */
+            --color-text-dark: #0f1a2e;        /* Xanh navy đậm cho text chính */
+            --color-text-light: #ffffff;
+            --color-text-gray: #374151;        /* Xám đậm hơn cho text phụ */
+            --color-text-muted: #6b7280;       /* Xám nhạt cho text ít quan trọng */
+            
+            /* Màu viền */
+            --color-border: rgba(26, 43, 76, 0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-text-dark);
+            line-height: 1.4;
+        }
+
+        .vietnamese-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0C13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30 16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0zm0 5c13.807 0 25 11.193 25 25S43.807 55 30 55 5 43.807 5 30 16.193 5 30 5z' fill='%231a2b4c' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        .lotus-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm0 10c22.091 0 40 17.909 40 40S72.091 90 50 90 10 72.091 10 50 27.909 10 50 10z' fill='%231a2b4c' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        /* Custom Classes */
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--color-primary-dark);
+        }
+
+        .bg-primary-light {
+            background-color: var(--color-primary-light);
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .text-primary-dark {
+            color: var(--color-primary-dark);
+        }
+
+        .border-primary {
+            border-color: var(--color-border);
+        }
+
+        .hover-primary:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        .hover-text-primary:hover {
+            color: var(--color-primary-dark);
+        }
+
+        .gradient-primary {
+            background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+        }
+
+        /* Thêm các class mới cho text */
+        .text-content {
+            color: var(--color-text-dark);
+            font-size: 1.1rem;
+        }
+
+        .text-subtitle {
+            color: var(--color-text-gray);
+            font-size: 1rem;
+        }
+
+        /* Cập nhật style cho các section */
+        .section-title {
+            color: var(--color-text-dark);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-secondary);
+        }
+
+        /* Style cho các card */
+        .service-card {
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(26, 43, 76, 0.1);
+        }
+
+        /* Style cho form */
+        .form-input {
+            border: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(26, 43, 76, 0.1);
+        }
+
+        /* Style cho feedback section */
+        .feedback-card {
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+        }
+
+        .feedback-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(26, 43, 76, 0.1);
+        }
+
+        .star-rating {
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-primary shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-text-light">Đông Phương Law</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-text-light hover:text-secondary-light">Trang chủ</a>
+                    <a href="#about" class="text-text-light hover:text-secondary-light">Giới thiệu</a>
+                    <a href="#services" class="text-text-light hover:text-secondary-light">Dịch vụ</a>
+                    <a href="#news" class="text-text-light hover:text-secondary-light">Tin tức</a>
+                    <a href="#contact" class="text-text-light hover:text-secondary-light">Liên hệ</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="tel:0902357922" class="text-text-light hover:text-secondary-light">
+                        <span class="mr-2">📞</span>0902 3579 22
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 gradient-primary text-text-light vietnamese-pattern">
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Luật sư đồng hành với tầm nhìn và chiến lược của CEO</h1>
+                    <p class="text-xl mb-8">Cung cấp các giải pháp pháp lý đầy đủ, toàn diện trong việc "chớp thời cơ", cơ hội để đầu tư kinh doanh và loại trừ các rủi ro pháp lý.</p>
+                    <a href="#contact" class="bg-text-light text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Tư vấn miễn phí</a>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Law Office" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-bg-light lotus-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Về Chúng Tôi</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-text-gray mb-6">Đông Phương Law cung cấp các giải pháp pháp lý đầy đủ, toàn diện trong việc "chớp thời cơ", cơ hội để đầu tư kinh doanh và loại trừ các rủi ro pháp lý trong toàn bộ hoạt động kinh doanh, nâng tầm CEO và các doanh nghiệp.</p>
+                    <p class="text-text-gray mb-6">Kết nối, chia sẻ các mối quan hệ với các cơ quan ban ngành, với các hiệp hội, tổ chức, các đối tác và hệ thống các lĩnh vực liên quan, bổ trợ cho nhau, cung cấp các giải pháp quản trị và điều hành doanh nghiệp.</p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-primary">7+</div>
+                            <div class="text-text-gray">Năm kinh nghiệm</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-primary">9.000+</div>
+                            <div class="text-text-gray">Khách hàng tin tưởng</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-primary">20+</div>
+                            <div class="text-text-gray">Loại dịch vụ pháp lý</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-primary">500+</div>
+                            <div class="text-text-gray">Doanh nghiệp sử dụng</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Office" class="rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Team" class="rounded-lg shadow-lg mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-bg-gray vietnamese-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Dịch Vụ Pháp Lý</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold mb-4">Tư vấn Doanh nghiệp & Đầu tư</h3>
+                    <p class="text-text-gray">Tư vấn pháp lý toàn diện cho doanh nghiệp, bao gồm thành lập công ty, hợp đồng thương mại, và tuân thủ pháp luật.</p>
+                </div>
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-bold mb-4">Tư vấn Dân sự</h3>
+                    <p class="text-text-gray">Tư vấn các vấn đề về tố tụng dân sự, lao động, hợp đồng dân sự và thương mại.</p>
+                </div>
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">🏛️</div>
+                    <h3 class="text-xl font-bold mb-4">Tư vấn Hình sự</h3>
+                    <p class="text-text-gray">Đại diện và tư vấn pháp lý trong các vụ án hình sự với tỷ lệ thành công cao.</p>
+                </div>
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">🌐</div>
+                    <h3 class="text-xl font-bold mb-4">Sở hữu trí tuệ</h3>
+                    <p class="text-text-gray">Tư vấn và bảo vệ quyền sở hữu trí tuệ, đăng ký nhãn hiệu, và xử lý vi phạm bản quyền.</p>
+                </div>
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">🏠</div>
+                    <h3 class="text-xl font-bold mb-4">Tư vấn Đất đai</h3>
+                    <p class="text-text-gray">Tư vấn pháp lý về đất đai, thủ tục sang tên sổ đỏ, và giải quyết tranh chấp đất đai.</p>
+                </div>
+                <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">📄</div>
+                    <h3 class="text-xl font-bold mb-4">Giấy phép con</h3>
+                    <p class="text-text-gray">Tư vấn và hỗ trợ xin các loại giấy phép con cho doanh nghiệp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-bg-light lotus-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Tin Tức & Sự Kiện</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-bg-light rounded-lg shadow-lg overflow-hidden border border-primary">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary mb-2">15 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">Cập nhật mới về Luật Doanh nghiệp 2024</h3>
+                        <p class="text-text-gray mb-4">Những thay đổi quan trọng trong Luật Doanh nghiệp mới và tác động đến hoạt động kinh doanh.</p>
+                        <a href="#" class="text-primary hover-text-primary font-semibold">Đọc thêm →</a>
+                    </div>
+                </div>
+                <div class="bg-bg-light rounded-lg shadow-lg overflow-hidden border border-primary">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary mb-2">10 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">Hội thảo về Bảo vệ quyền sở hữu trí tuệ</h3>
+                        <p class="text-text-gray mb-4">Chia sẻ kinh nghiệm và giải pháp bảo vệ quyền sở hữu trí tuệ trong thời đại số.</p>
+                        <a href="#" class="text-primary hover-text-primary font-semibold">Đọc thêm →</a>
+                    </div>
+                </div>
+                <div class="bg-bg-light rounded-lg shadow-lg overflow-hidden border border-primary">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-primary mb-2">5 Tháng 3, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">Thành công trong vụ án thương mại quốc tế</h3>
+                        <p class="text-text-gray mb-4">Đông Phương Law đại diện thành công cho doanh nghiệp Việt Nam trong vụ kiện thương mại quốc tế.</p>
+                        <a href="#" class="text-primary hover-text-primary font-semibold">Đọc thêm →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-text-light px-8 py-3 rounded-lg font-semibold hover-primary transition duration-300">Xem tất cả tin tức</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-bg-light vietnamese-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Đội Ngũ Luật Sư</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Lawyer 1" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Nguyễn Văn A</h3>
+                    <p class="text-text-gray">Luật sư trưởng</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Lawyer 2" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Trần Thị B</h3>
+                    <p class="text-text-gray">Luật sư cao cấp</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Lawyer 3" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Lê Văn C</h3>
+                    <p class="text-text-gray">Luật sư chuyên môn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-20 bg-bg-light vietnamese-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 font-['Playfair_Display'] text-text-dark">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+            <div class="swiper feedbackSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Feedback 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-bg-light p-8 rounded-lg shadow-lg border border-primary">
+                            <div class="flex items-center mb-6">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Client 1" class="w-16 h-16 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-lg font-['Playfair_Display'] text-text-dark">Nguyễn Văn Minh</h4>
+                                    <p class="text-text-gray text-sm">CEO - Công ty ABC</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-4">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                            </div>
+                            <p class="text-text-gray text-base leading-relaxed">"Đông Phương Law đã giúp chúng tôi giải quyết nhiều vấn đề pháp lý phức tạp. Đội ngũ luật sư chuyên nghiệp và tận tâm, luôn sẵn sàng hỗ trợ 24/7."</p>
+                        </div>
+                    </div>
+                    <!-- Feedback 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-bg-light p-8 rounded-lg shadow-lg border border-primary">
+                            <div class="flex items-center mb-6">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Client 2" class="w-16 h-16 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-lg font-['Playfair_Display'] text-text-dark">Trần Thị Hương</h4>
+                                    <p class="text-text-gray text-sm">Giám đốc - Công ty XYZ</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-4">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                            </div>
+                            <p class="text-text-gray text-base leading-relaxed">"Dịch vụ tư vấn pháp lý của Đông Phương Law rất chuyên nghiệp. Họ không chỉ giải quyết vấn đề mà còn đưa ra những giải pháp phòng ngừa rủi ro hiệu quả."</p>
+                        </div>
+                    </div>
+                    <!-- Feedback 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-bg-light p-8 rounded-lg shadow-lg border border-primary">
+                            <div class="flex items-center mb-6">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Client 3" class="w-16 h-16 rounded-full object-cover">
+                                <div class="ml-4">
+                                    <h4 class="font-bold text-lg font-['Playfair_Display'] text-text-dark">Lê Văn Tuấn</h4>
+                                    <p class="text-text-gray text-sm">Chủ tịch - Tập đoàn DEF</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-4">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                            </div>
+                            <p class="text-text-gray text-base leading-relaxed">"Đội ngũ luật sư của Đông Phương Law có kiến thức sâu rộng và kinh nghiệm phong phú. Họ đã giúp chúng tôi vượt qua nhiều thách thức pháp lý quan trọng."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-primary"></div>
+                <div class="swiper-button-prev text-primary"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-bg-gray lotus-pattern">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Liên Hệ</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Nội dung</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-primary" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-text-light px-8 py-3 rounded-lg font-semibold hover-primary transition duration-300">Gửi tin nhắn</button>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-bg-light p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Thông tin liên hệ</h3>
+                        <div class="space-y-4">
+                            <p class="flex items-center">
+                                <span class="text-primary mr-2">📍</span>
+                                Tòa nhà Capital Tower, số 109 Trần Hưng Đạo, Phường Cửa Nam, Quận Hoàn Kiếm, Hà Nội
+                            </p>
+                            <p class="flex items-center">
+                                <span class="text-primary mr-2">📍</span>
+                                Số 81 đường Cách Mạng Tháng Tám, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh
+                            </p>
+                            <p class="flex items-center">
+                                <span class="text-primary mr-2">📞</span>
+                                0902 3579 22
+                            </p>
+                            <p class="flex items-center">
+                                <span class="text-primary mr-2">✉️</span>
+                                dongphuonglaw2020@gmail.com
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Giờ làm việc</h4>
+                            <p class="text-text-gray">Thứ Hai - Thứ Sáu: 8:00 - 17:30</p>
+                            <p class="text-text-gray">Thứ Bảy: 8:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-text-light py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Đông Phương Law</h3>
+                    <p class="text-text-gray">Công ty TNHH Quốc tế luật Đông Phương - Đồng hành cùng sự phát triển của bạn</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Liên kết nhanh</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-text-gray hover:text-text-light">Trang chủ</a></li>
+                        <li><a href="#about" class="text-text-gray hover:text-text-light">Giới thiệu</a></li>
+                        <li><a href="#services" class="text-text-gray hover:text-text-light">Dịch vụ</a></li>
+                        <li><a href="#contact" class="text-text-gray hover:text-text-light">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Dịch vụ</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-text-gray hover:text-text-light">Tư vấn doanh nghiệp</a></li>
+                        <li><a href="#" class="text-text-gray hover:text-text-light">Tư vấn dân sự</a></li>
+                        <li><a href="#" class="text-text-gray hover:text-text-light">Tư vấn hình sự</a></li>
+                        <li><a href="#" class="text-text-gray hover:text-text-light">Tư vấn đất đai</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kết nối với chúng tôi</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-gray hover:text-text-light">
+                            <span class="sr-only">Zalo</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-text-gray hover:text-text-light">
+                            <span class="sr-only">Messenger</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-text-gray hover:text-text-light">
+                            <span class="sr-only">Fanpage</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-text-gray">
+                <p>&copy; 2024 Công ty TNHH Quốc tế luật Đông Phương. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.feedbackSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html> 

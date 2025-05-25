@@ -1,0 +1,215 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper-home{
+    /* margin: 0 auto; */
+}
+
+.container{
+    
+}
+
+.wrapper-home .header__top{
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-color: #dddddd;
+}
+/* contant color */
+.text-main{
+    color: #cc8800 !important;
+}
+.text-main-2{
+    color: #b1976b !important;
+}
+
+.wrapper-home .header__top-left__link-social.phone{
+    border-style: solid;
+    border-right-width: 2px;
+    border-color: #dddddd;
+}
+
+.wrapper-home .header__top-left__link-social.mail{
+    border-style: solid;
+    border-right-width: 2px;
+    border-color: #dddddd;
+}
+
+.wrapper-home #header-main__menu ul.active{
+    display: flex;
+    transition: ease-in-out .3s;
+    transform: translateX(0%);
+
+    box-shadow: 2 -5px 35px rgba(10, 10, 10, 0.08);
+    -moz-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    -webkit-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    background-color: #ffffff;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+.wrapper-home #header-main__menu ul{
+    /* display: none; */
+    transition: ease-in-out .3s;
+}
+.wrapper-home .header-main__menu a.active{
+    border: 2px solid #4a4a4a;
+    /* padding: 10px 20px; */
+    border-radius: 4px;
+    color: #353535;
+}
+.wrapper-home .header-main__menu a:hover{
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
+    color: #353535;
+}
+.wrapper-home .header-main__menu button.btn-search{
+    border: 2px solid #cc8800;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.wrapper-home .header-main__menu a{
+    color: #504f4f;
+}
+
+.wrapper-home main .main__banner .banner__btn .btn__contact{
+    background: linear-gradient(rgb(131, 102, 62) 0%, rgb(176, 150, 106) 100%);
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all .5s;
+
+}
+.wrapper-home main .main__banner .banner__btn .btn__contact:hover{
+    background: #cc8800;
+    transition: all .5s;
+}
+.wrapper-home main .main__banner .banner__content .banner__title span{
+    font-family: "Merriweather", serif;
+
+}
+
+.wrapper-home .banner__sub-intro{
+    box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    -moz-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    -webkit-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    background-color: #ffffff;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    z-index: 0;
+}
+
+
+/* footer */
+#social-scroll-top{
+    border: 2px solid #e5e4e4;
+    border-radius: 3px;
+}
+
+/* ======= why-choose==== */
+section#why-choose{
+    /* 
+    https://legalam.vn/wp-content/uploads/2019/02/sign1.jpg
+    */
+    background-image: url(https://legalam.vn/wp-content/uploads/2024/03/pattric11-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* height: 710.625px; */
+}
+section#why-choose .why-choose__content{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #686868;
+}
+
+#form-contact{
+    box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    -moz-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    -webkit-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
+    background-color: #ffffff;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    /* z-index: 0; */
+}
+
+#form-contact .form-contact__box{
+    
+    background-image: url(https://legalam.vn/wp-content/uploads/2019/02/statue-con.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ====news==== */
+#news{
+    
+    background-image: url(https://domilaw.com.vn/wp-content/uploads/2024/06/trong-dong.png);
+    background-size: cover;
+    background-position: center center;
+}
+#news::before{
+    opacity: .7;
+}
+#news .news__item{
+    box-shadow: rgba(10, 10, 10, 0.08) 0px 0px 35px;
+}
+
+
+/* ==========ABOUT US = ==== */
+.about-item__service-list{
+
+}
+.about-item__service-list li a::before{
+    content: '✓';
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #cc8800;
+}
+
+
+/* Modal style */
+/** Modal */
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  right: 0;
+  /* max-width: 70vw; */
+  margin: 0 auto;
+  padding: 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/** Overlay */
+.overlay {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/** JS */
+.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}

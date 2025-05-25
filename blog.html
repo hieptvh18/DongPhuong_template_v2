@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DongPhuong Law-blog</title>
+    <!-- link tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link cnd fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link my css file custom -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper-home">
+      <!-- ====header===== -->
+      <header class="header">
+        <section class="header__top hidden sm:block">
+          <div
+            class="header__top-content container ml-auto mr-auto flex justify-between pt-4 pb-4 md:px-4 lg:px-0"
+          >
+            <div class="header__top-left flex items-center gap-6">
+              <a href="#" class="header__top-left__link-social">
+                <i class="fab fa-facebook-f text-main hover:!text-[#161616]"></i>
+              </a>
+              <a href="#" class="header__top-left__link-social">
+                <i class="fab fa-linkedin-in text-main hover:!text-[#161616]"></i>
+              </a>
+              <a href="#" class="header__top-left__link-social">
+                <i class="fab fa-instagram text-main hover:!text-[#161616]"></i>
+              </a>
+              <a href="#" class="header__top-left__link-social">
+                <i class="fas fa-envelope text-main hover:!text-[#161616]"></i>
+              </a>
+            </div>
+            <div class="header__top-right flex gap-7">
+              <div class="right-item">
+                <a href="#" class="header__top-left__link-social mail pr-4">
+                  <i class="fas fa-envelope text-main"></i>
+                </a>
+                <a href="mailto:info@yoursite.com" class="ml-4 text-[15px]">
+                  info@yoursite.com
+                </a>
+              </div>
+              <div class="right-item">
+                <a href="#" class="header__top-left__link-social phone pr-4">
+                  <i class="fas fa-phone text-main"></i>
+                </a>
+                <a href="tel:+1 (888) 123 4567" class="ml-4 text-[15px]">
+                  +1 (888) 123 4567
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="header__main container h-auto ml-auto mr-auto flex justify-between items-center md:px-4 lg:px-0"
+        >
+          <div class="header__main-logo">
+            <a href="/" class="logo inline-block w-[100px] lg:w-[120px]">
+              <img
+                src="https://dongphuonglaw.com/wp-content/uploads/2023/10/logo.jpg"
+                alt="Logo"
+                class="w-full px-3 md:px-0 py-2 lg:py-5"
+              />
+            </a>
+          </div>
+          <div id="header-main__menu" class="header-main__menu">
+            <ul class="nav-bar flex flex-col lg:flex-row fixed lg:static items-center left-0 top-0 translate-x-[-100%] lg:translate-x-0 min-h-[100%] bg-white z-50 gap-7 lg:gap-0 py-[35px] lg:py-0 md:px-6 lg:px-0">
+              <li>
+                <a href="/" class="text-[16px] font-[500] active px-[20px] py-[10px] hover:text-[#353535] border-[2px] border-white"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li>
+                <a href="./about-us.html" class="text-[16px] font-[500] px-[20px] py-[10px] border-[2px] border-white"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="./blog.html" class="text-[16px] font-[500] px-[20px] py-[10px] border-[2px] border-white"
+                  >Tư vấn pháp luật</a
+                >
+              </li>
+              <li>
+                <a href="./blog.html" class="text-[16px] font-[500] px-[20px] py-[10px] border-[2px] border-white">Dân sự</a>
+              </li>
+              <li>
+                <a href="./blog.html" class="text-[16px] font-[500] px-[20px] py-[10px] border-[2px] border-white">Hình sự</a>
+              </li>
+              <li>
+                <a href="./contact.html" class="text-[16px] font-[500] px-[20px] py-[10px] border-[2px] border-white">Liên hệ</a>
+              </li>
+              <li>
+                <button
+                  id="btn-modal"
+                  class="btn-search font-[500] flex items-center gap-3 hover:bg-[#cc8800] hover:!text-white"
+                >
+                  <span>Tìm kiếm</span>
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+            </ul>
+
+            <!-- menu responsesive -->
+             <button class="lg:hidden py-2 px-3" id="btn-menu__bar">
+              <i class="fas fa-bars text-2xl"></i>
+             </button>
+
+             <!-- menu main -->
+              <!-- <ul class="menu-list__responsive">
+
+              </ul> -->
+          </div>
+        </section>
+      </header>
+
+      <!-- ====main==== -->
+      <main>
+        <section class="main__banner">
+          <div class="banner__box relative">
+            <div class="banner__item h-[200px]">
+              <img
+                src="https://themetor.com/elementor/thelaw/wp-content/uploads/sites/5/2022/03/img1.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- main banner image -->
+            <div
+              class="banner__content flex flex-col gap-2 text-center absolute top-[100px] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <div
+                class="banner__title text-[28px] lg:text-[38px] text-[#161616]"
+              >
+                <span class="tracking-widest">Trang chủ/Tin tức</span>
+                <div class="w-[70px] h-[1px] bg-[#cc8800] mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main blogs -->
+        <section id="blog" class="flex justify-center my-[50px]">
+          <div class="blog-wrapper container flex flex-col lg:flex-row gap-5">
+            <div class="blog__content-box w-full lg:w-2/3">
+              <div class="blog__item flex flex-col lg:flex-row gap-2 lg:gap-3 mb-7">
+                <div class="blog__item-img w-full lg:w-[40%] h-[200px] border-2 p-[5px] overflow-hidden">
+                  <a href="./blog-detail.html">
+                    <img
+                      src="https://dongphuonglaw.com/wp-content/uploads/2024/09/so-do_0305235539.jpg"
+                      alt="new-img"
+                      class="w-full h-full object-cover hover:scale-110 hover:transition-all transition-all"
+                    />
+                  </a>
+                </div>
+                <div class="blog__item-content w-full lg:w-[60%] p-2">
+                  <h2 class="line-clamp-2 mb-3 text-[18px] lg:text-[20px] font-bold">
+                    <a href="./blog-detail.html">
+                      Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                    </a>
+                  </h2>
+                  <h3 class="line-clamp-1 mb-3 uppercase text-main">
+                    Tư vấn đất đai
+                  </h3>
+                  <p class="text-[#555] line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima nam hic accusantium consequatur, eius, repellendus
+                    officia voluptates corrupti impedit ratione nulla totam
+                    voluptate. Molestias impedit adipisci maiores iusto ipsam
+                    quod.
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog__item flex flex-col lg:flex-row gap-2 lg:gap-3 mb-7">
+                <div class="blog__item-img w-full lg:w-[40%] h-[200px] border-2 p-[5px] overflow-hidden">
+                  <a href="./blog-detail.html">
+                    <img
+                      src="https://dongphuonglaw.com/wp-content/uploads/2024/09/so-do_0305235539.jpg"
+                      alt="new-img"
+                      class="w-full h-full object-cover hover:scale-110 hover:transition-all transition-all"
+                    />
+                  </a>
+                </div>
+                <div class="blog__item-content w-full lg:w-[60%] p-2">
+                  <h2 class="line-clamp-2 mb-3 text-[18px] lg:text-[20px] font-bold">
+                    <a href="./blog-detail.html">
+                      Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                    </a>
+                  </h2>
+                  <h3 class="line-clamp-1 mb-3 uppercase text-main">
+                    Tư vấn đất đai
+                  </h3>
+                  <p class="text-[#555] line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima nam hic accusantium consequatur, eius, repellendus
+                    officia voluptates corrupti impedit ratione nulla totam
+                    voluptate. Molestias impedit adipisci maiores iusto ipsam
+                    quod.
+                  </p>
+                </div>
+              </div>
+              <div class="blog__item flex flex-col lg:flex-row gap-2 lg:gap-3 mb-7">
+                <div class="blog__item-img w-full lg:w-[40%] h-[200px] border-2 p-[5px] overflow-hidden">
+                  <a href="./blog-detail.html">
+                    <img
+                      src="https://dongphuonglaw.com/wp-content/uploads/2024/09/so-do_0305235539.jpg"
+                      alt="new-img"
+                      class="w-full h-full object-cover hover:scale-110 hover:transition-all transition-all"
+                    />
+                  </a>
+                </div>
+                <div class="blog__item-content w-full lg:w-[60%] p-2">
+                  <h2 class="line-clamp-2 mb-3 text-[18px] lg:text-[20px] font-bold">
+                    <a href="./blog-detail.html">
+                      Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                    </a>
+                  </h2>
+                  <h3 class="line-clamp-1 mb-3 uppercase text-main">
+                    Tư vấn đất đai
+                  </h3>
+                  <p class="text-[#555] line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima nam hic accusantium consequatur, eius, repellendus
+                    officia voluptates corrupti impedit ratione nulla totam
+                    voluptate. Molestias impedit adipisci maiores iusto ipsam
+                    quod.
+                  </p>
+                </div>
+              </div>
+              <div class="blog__item flex flex-col lg:flex-row gap-2 lg:gap-3 mb-7">
+                <div class="blog__item-img w-full lg:w-[40%] h-[200px] border-2 p-[5px] overflow-hidden">
+                  <a href="./blog-detail.html">
+                    <img
+                      src="https://dongphuonglaw.com/wp-content/uploads/2024/09/so-do_0305235539.jpg"
+                      alt="new-img"
+                      class="w-full h-full object-cover hover:scale-110 hover:transition-all transition-all"
+                    />
+                  </a>
+                </div>
+                <div class="blog__item-content w-full lg:w-[60%] p-2">
+                  <h2 class="line-clamp-2 mb-3 text-[18px] lg:text-[20px] font-bold">
+                    <a href="./blog-detail.html">
+                      Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                    </a>
+                  </h2>
+                  <h3 class="line-clamp-1 mb-3 uppercase text-main">
+                    Tư vấn đất đai
+                  </h3>
+                  <p class="text-[#555] line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima nam hic accusantium consequatur, eius, repellendus
+                    officia voluptates corrupti impedit ratione nulla totam
+                    voluptate. Molestias impedit adipisci maiores iusto ipsam
+                    quod.
+                  </p>
+                </div>
+              </div>
+              <div class="blog__item flex flex-col lg:flex-row gap-2 lg:gap-3 mb-7">
+                <div class="blog__item-img w-full lg:w-[40%] h-[200px] border-2 p-[5px] overflow-hidden">
+                  <a href="./blog-detail.html">
+                    <img
+                      src="https://dongphuonglaw.com/wp-content/uploads/2024/09/so-do_0305235539.jpg"
+                      alt="new-img"
+                      class="w-full h-full object-cover hover:scale-110 hover:transition-all transition-all"
+                    />
+                  </a>
+                </div>
+                <div class="blog__item-content w-full lg:w-[60%] p-2">
+                  <h2 class="line-clamp-2 mb-3 text-[18px] lg:text-[20px] font-bold">
+                    <a href="./blog-detail.html">
+                      Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                    </a>
+                  </h2>
+                  <h3 class="line-clamp-1 mb-3 uppercase text-main">
+                    Tư vấn đất đai
+                  </h3>
+                  <p class="text-[#555] line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima nam hic accusantium consequatur, eius, repellendus
+                    officia voluptates corrupti impedit ratione nulla totam
+                    voluptate. Molestias impedit adipisci maiores iusto ipsam
+                    quod.
+                  </p>
+                </div>
+              </div>
+              <!-- paginate -->
+              <ul class="flex gap-4 justify-center mt-[35px]">
+                <li>
+                  <a href="#" class="flex-1 px-4 py-3 border-2 border-[#c9c9c9]"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex-1 px-4 py-3 border-2 border-[#c9c9c9]"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex-1 px-4 py-3 border-2 border-[#c9c9c9]"
+                    >3</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="blog__sidebar w-full lg:w-1/3 px-3 flex lg:flex-col flex-col-reverse">
+              <div class="maps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.380323435721!2d105.83954397613073!3d21.023567880624437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab90949fd5f7%3A0x25802ec5e94a3668!2sT%C3%B2a%20nh%C3%A0%20Capital%20Tower!5e1!3m2!1svi!2s!4v1729155933607!5m2!1svi!2s"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="blog__sidebar-category">
+                <h3 class="text-xl my-3 pb-2 border-b-2">
+                  <i class="fas fa-caret-right"></i>
+                  Xem nhiều
+                </h3>
+                <div class="blog__content-box w-full">
+                  <div class="blog__item flex gap-3 mb-7">
+                    <div
+                      class="blog__item-img w-[40%] h-[150px] border-2 p-[5px]"
+                    >
+                      <a href="./blog-detail.html">
+                        <img
+                          src="https://dongphuonglaw.com/wp-content/uploads/2020/05/thuyet-trinh-bao-luc-gia-dinh.jpg"
+                          alt="new-img"
+                          class="w-full h-full object-cover"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog__item-content w-[60%] p-2">
+                      <h2 class="line-clamp-1 mb-3 text-[18px] font-bold">
+                        <a href="#">
+                          Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                        </a>
+                      </h2>
+                      <h3 class="line-clamp-1 mb-3 uppercase text-sm text-main">
+                        Tư vấn đất đai
+                      </h3>
+                      <p class="text-[#555] line-clamp-2 text-[15px]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Minima nam hic accusantium consequatur, eius,
+                        repellendus officia voluptates corrupti impedit ratione
+                        nulla totam voluptate. Molestias impedit adipisci
+                        maiores iusto ipsam quod.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog__item flex gap-3 mb-7">
+                    <div
+                      class="blog__item-img w-[40%] h-[150px] border-2 p-[5px]"
+                    >
+                      <a href="./blog-detail.html">
+                        <img
+                          src="https://dongphuonglaw.com/wp-content/uploads/2020/05/thuyet-trinh-bao-luc-gia-dinh.jpg"
+                          alt="new-img"
+                          class="w-full h-full object-cover"
+                        />
+                      </a>
+                    </div>
+                    <div class="blog__item-content w-[60%] p-2">
+                      <h2 class="line-clamp-1 mb-3 text-[18px] font-bold">
+                        <a href="#">
+                          Mẫu đơn xin trích lục thông tin đất đai năm 2024
+                        </a>
+                      </h2>
+                      <h3 class="line-clamp-1 mb-3 uppercase text-sm text-main">
+                        Tư vấn đất đai
+                      </h3>
+                      <p class="text-[#555] line-clamp-2 text-[15px]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Minima nam hic accusantium consequatur, eius,
+                        repellendus officia voluptates corrupti impedit ratione
+                        nulla totam voluptate. Molestias impedit adipisci
+                        maiores iusto ipsam quod.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ====footer==== -->
+      <footer>
+        <div class="footer-wrapper">
+          <!-- Social icon contact demo -->
+          <div id="social-contact-icon" class="fixed left-4 bottom-[100px]">
+            <div class="flex flex-col gap-3">
+              <a
+                href="#"
+                class="item zalo bg-sky-500 w-[50px] h-[50px] rounded-full shadow-cyan-500/50"
+              >
+                <img
+                  src="https://legalam.vn/wp-content/plugins/button-contact-vr/img/zalo.png"
+                  alt=""
+                  class="w-full h-full p-3"
+                />
+              </a>
+              <a
+                href="#"
+                class="item phon bg-red-600 w-[50px] h-[50px] rounded-full shadow-cyan-500/50"
+              >
+                <img
+                  src="https://legalam.vn/wp-content/plugins/button-contact-vr/img/phone.png"
+                  alt=""
+                  class="w-full h-full p-3"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- button fixed scroll top -->
+          <button
+            id="social-scroll-top"
+            class="fixed right-4 w-[47px] h-[47px] bottom-[50px] bg-white z-30"
+          >
+            <div class="flex justify-center items-center">
+              <i class="fas fa-chevron-up text-[10px] text-[#444]"></i>
+            </div>
+          </button>
+          <!-- main footer -->
+          <div class="footer-wrapper">
+            <div class="footer__top-wrapper bg-[#444444] flex justify-center">
+                <div class="footer__top flex flex-col md:flex-row gap-7 lg:gap-5 py-[30px] lg:py-[50px] px-4 md:px-0 container">
+                    <div class="footer__top-item flex-1">
+                      <div class="logo-footer w-[170px] md:w-[150px] mb-4">
+                        <img
+                          src="https://dongphuonglaw.com/wp-content/uploads/2023/10/logo.jpg"
+                          alt="Logo"
+                          class="w-full pb-5 pt-5"
+                        />
+                      </div>
+                      <p class="footer__intro mb-4 text-[#C9C9C9]">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Ullam deserunt numquam harum ratione odio? Totam delectus vel
+                        et saepe quam accusamus eum repellendus excepturi illo,
+                        placeat autem, quas facere architecto.
+                      </p>
+                      <div class="footer__social-items">
+                        <div class="item flex gap-5">
+                          <a href="#" class="footer__link-social">
+                            <i class="fab fa-facebook-f text-main"></i>
+                          </a>
+                          <a href="#" class="footer__link-social">
+                            <i class="fab fa-linkedin-in text-main"></i>
+                          </a>
+                          <a href="#" class="footer__link-social">
+                            <i class="fab fa-instagram text-main"></i>
+                          </a>
+                          <a href="#" class="footer__link-social">
+                            <i class="fas fa-envelope text-main"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer__top-item flex-1">
+                      <h3 class="footer__top-item-tile font-bold text-[18px] text-white mb-4">Thông tin liên hệ</h3>
+                      <p class="footer__address mb-4 text-[#C9C9C9]">
+                        Địa Chỉ: Tòa nhà Capital Tower, số 109 Trần Hưng Đạo, Phường
+                        Cửa Nam, Quận Hoàn Kiếm, Thành phố Hà Nội, Việt Nam
+                      </p>
+                      <p class="footer__address mb-4 text-[#C9C9C9]">+84 936 061 359</p>
+                      <p class="footer__address text-[#C9C9C9]">info@gmail.com</p>
+                    </div>
+                    <div class="footer__top-item flex-1">
+                      <h3 class="footer__top-item-tile font-bold text-[18px] text-white mb-4">Thông tin liên hệ</h3>
+                      <p class="footer__address mb-4 text-[#C9C9C9]">
+                        Địa Chỉ: Tòa nhà Capital Tower, số 109 Trần Hưng Đạo, Phường
+                        Cửa Nam, Quận Hoàn Kiếm, Thành phố Hà Nội, Việt Nam
+                      </p>
+                      <p class="footer__address mb-4 text-[#C9C9C9]">+84 936 061 359</p>
+                      <p class="footer__address text-[#C9C9C9]">info@gmail.com</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="footer__bottom-wrapper bg-[#111] flex justify-center">
+                <div class="footer__bottom py-[30px] container">
+                  <div
+                    class="footer__bottom-coppy-right text-center text-[#A3A3A3] tracking-widest text-sm"
+                  >
+                    © Copyright 2024 DONGPHUONGLAW, All Right Reserved
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- modal dialog form search -->
+    <div class="overlay" id="overlay"></div>
+    <div class="modal max-w-[100vw] lg:max-w-[70vw] z-50" id="modal">
+      <button class="modal-close-btn" id="close-btn">
+        <i class="fa fa-times" title="閉じる"></i>
+      </button>
+      <h3 class="text-2xl text-center mb-4">Tìm kiếm</h3>
+      <form action="" method="GET">
+          <div class="relative my-2">
+            <input name="keyword" type="text" class="bg-purple-white shadow rounded border-0 w-full p-3 focus:outline-none" placeholder="Tìm kiếm dịch vụ...">
+            <button type="submit" class="absolute pin-r pin-t mt-3 mr-4 text-purple-lighter right-[10px] top-0">
+              <svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+                <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+                  c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+                  C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+                  S32.459,40,21.983,40z"/>
+            </svg>
+            </button>
+          </div>
+      </form>
+    </div>
+
+    <!-- link js custom -->
+    <script src="./script.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
