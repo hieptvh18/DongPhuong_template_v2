@@ -29,6 +29,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // show hide menu bar responsesive
   const btnBarMenu = document.getElementById("btn-menu__bar");
   btnBarMenu.addEventListener("click", handleToggleMainMenu);
+
+  // handle scroll fixed header
+  const headerMainEl = document.querySelector("header .header-menu");
+  const headerTopEl = document.querySelector("header .header__top-content");
+  const mainContentEl = document.querySelector("#main");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= headerTopEl.offsetHeight) {
+      headerMainEl.classList.add("fixed");
+
+      // Adjust the top margin of the main content to prevent overlap
+      mainContentEl.style.marginTop = `${headerMainEl.offsetHeight}px`;
+    } else {
+      headerMainEl.classList.remove("fixed");
+
+      // Reset the top margin of the main content
+      mainContentEl.style.marginTop = "0";
+    }
+  });
 });
 
   // click to documents

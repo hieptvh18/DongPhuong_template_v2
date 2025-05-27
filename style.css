@@ -17,7 +17,8 @@
 }
 /* contant color */
 .text-main{
-    color: #cc8800 !important;
+    /* color: #cc8800 !important; */
+    color: #B6A188 !important;
 }
 .text-main-2{
     color: #b1976b !important;
@@ -52,24 +53,45 @@
     /* display: none; */
     transition: ease-in-out .3s;
 }
-.wrapper-home .header-main__menu a.active{
-    border: 2px solid #4a4a4a;
-    /* padding: 10px 20px; */
-    border-radius: 4px;
-    color: #353535;
+.wrapper-home .header-main__menu a.active{  
+    color: #cc8800;
+}
+.wrapper-home .header-main__menu a{
+    transition: all .5s;
 }
 .wrapper-home .header-main__menu a:hover{
-    border: 2px solid #4a4a4a;
-    border-radius: 4px;
-    color: #353535;
+    transition: all .5s;
+    color: #cc8800;
 }
 .wrapper-home .header-main__menu button.btn-search{
     border: 2px solid #cc8800;
     padding: 10px 20px;
     border-radius: 4px;
 }
-.wrapper-home .header-main__menu a{
-    color: #504f4f;
+
+.wrapper-home .btn-contact-header{
+    background: #B6A188;
+    white-space: nowrap;
+    transition: all .5s;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 3px;
+    gap: 5px;
+}
+.wrapper-home .btn-contact-header:hover{
+    background: #cc8800;
+    transition: all .5s;
+}
+
+header .header-menu.fixed
+{
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    background-color: #ffffff;
 }
 
 .wrapper-home main .main__banner .banner__btn .btn__contact{
@@ -96,9 +118,36 @@
     border-radius: 4px 4px 4px 4px;
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px 4px 4px 4px;
-    z-index: 0;
 }
 
+.wrapper-home .btn-next-slide-main__prev{
+    right: 80px;
+    color: white;
+}
+.wrapper-home .btn-next-slide-main__next{
+    left: 80px;
+    color: white;
+}
+.wrapper-home .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 30px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-size: 30px;
+}
+.wrapper-home .main__banner{
+    
+}
+.wrapper-home .main__banner .text-label-banner{
+    font-size: 70px;
+    color: #191919;
+    font-family: "Playfair", serif;
+}
+.wrapper-home .main__banner a.btn-main-banner{
+    color: #ffffff;
+    font-size: 17px;
+    background-color: #b6a188;
+    padding: 17px 25px;
+}
 
 /* footer */
 #social-scroll-top{
@@ -175,15 +224,15 @@ section#why-choose .why-choose__content{
   opacity: 0;
   transition: opacity 0.3s;
   position: absolute;
-  top: 30vh;
-  left: 0;
-  right: 0;
-  /* max-width: 70vw; */
-  margin: 0 auto;
   padding: 50px 30px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .modal-close-btn {
   position: absolute;
