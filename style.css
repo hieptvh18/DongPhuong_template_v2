@@ -155,27 +155,33 @@ header .header-menu.fixed
     border-radius: 3px;
 }
 
-/* ======= why-choose==== */
-section#why-choose{
+/* ======= form-contact-wrapper==== */
+section#form-contact-wrapper{
     /* 
     https://legalam.vn/wp-content/uploads/2019/02/sign1.jpg
     */
-    background-image: url(https://legalam.vn/wp-content/uploads/2024/03/pattric11-bg.jpg);
+    background-image: url('./assets/pictures/banner-why-choose.jpg');
     background-size: cover;
     background-position: center center;
     /* height: 710.625px; */
+    background-attachment: fixed; /* Giữ background cố định */
+    background-repeat: no-repeat;
 }
-section#why-choose .why-choose__content{
+section#form-contact-wrapper .form-contact__content{
     border-width: 1px 1px 1px 1px;
     border-style: solid;
     border-color: #686868;
+}
+#form-contact-wrapper .full-line{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #525252;
 }
 
 #form-contact{
     box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
     -moz-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
     -webkit-box-shadow: 0 0 32px rgba(10, 10, 10, 0.08);
-    background-color: #ffffff;
     border-radius: 4px 4px 4px 4px;
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px 4px 4px 4px;
@@ -184,9 +190,9 @@ section#why-choose .why-choose__content{
 
 #form-contact .form-contact__box{
     
-    background-image: url(https://legalam.vn/wp-content/uploads/2019/02/statue-con.jpg);
+    /* background-image: url(https://legalam.vn/wp-content/uploads/2019/02/statue-con.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
 }
 
 /* ====news==== */
@@ -214,6 +220,26 @@ section#why-choose .why-choose__content{
     border-radius: 50%;
     background-color: #fff;
     color: #cc8800;
+}
+
+
+
+/* =========== review ========*/
+section#review .review-item{
+    box-shadow: rgba(10, 10, 10, 0.08) 0px 0px 15px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+section#review .review-item__img img{
+    transition: all .7s;
+    overflow: hidden;
+}
+
+section#review .review-item__img img:hover{
+    transform: scale(1.1);
+    transition: all .7s;
 }
 
 
