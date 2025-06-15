@@ -210,6 +210,14 @@ section#form-contact-wrapper .form-contact__content{
 
 
 /* ==========ABOUT US = ==== */
+#about-us-page #qa{
+    background-image: url('./assets/pictures/banner-why-choose.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Giữ background cố định */
+    background-repeat: no-repeat;
+
+}
 .about-item__service-list{
 
 }

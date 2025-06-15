@@ -128,6 +128,16 @@
 
               <ul class="nav-bar flex flex-col lg:flex-row fixed lg:static items-center left-0 top-0 translate-x-[-100%] lg:translate-x-0 min-h-[100%] z-50 gap-7 lg:gap-0 py-[27px]"
               >
+              <li>
+                <!-- logo responsive -->
+                <a href="/" class="logo inline-block w-[100px] p-3 lg:w-[120px] md:hidden">
+                  <img
+                    src="./assets/pictures/logodp.png"
+                    alt="Logo"
+                    class="w-full"
+                  />
+                </a>
+              </li>
                 <li>
                   <a
                     href=""
@@ -186,10 +196,10 @@
               </div>
             </div>
 
-            <div class="header-main__search hidden md:show">
+            <div class="header-main__search hidden md:block">
               <button
                 id="btn-modal"
-                class="btn-search font-[500] flex items-center gap-3 hover:!text-gray"
+                class="btn-search font-[500] flex items-center gap-3 hover:!text-gray p-2"
               >
                 <i class="fas fa-search"></i>
               </button>
@@ -312,7 +322,7 @@
           >
             <div class="line w-[20px] lg:w-[50px] h-[4px] bg-[#cc8800]"></div>
             <h2
-              class="practice-title font-bold text-[25px] lg:text-[30px] text-[#161616]"
+              class="practice-title font-bold text-[28px] lg:text-[30px] text-[#161616]"
             >
               Dịch vụ của chúng tôi
             </h2>
@@ -512,34 +522,7 @@
           </div>
         </section>
 
-        <!-- why-choose -->
-         <section id="why-choose" class="mb-[50px] lg:mb-[130px]">
-          <div class="why-choose__box container flex justify-between items-center flex-col md:flex-row mx-auto gap-[80px]">
-            <div class="why-choose__left flex-1 px-4 md:px-0">
-              <img
-                  src="./assets/pictures/why-choost-img1.png"
-                  alt="Why choose us"
-                  class="w-full h-full"
-                />
-            </div>
-            <div class="why-choose__right flex-1 px-4 md:px-0">
-              <p class="text-[#a8a8a8] mb-[10px] text-[13px] md:text-[15px] uppercase tracking-wider">Chúng tôi là chuyên gia trong lĩnh vực gì?</p>
-              <h3 class="text-[#454545] font-bold text-[28px] md:text-[30px] mb-[25px] tracking-wide">Tại sao lại chọn chúng tôi</h3>
-              <div class="line w-[50px] h-[3px] bg-[#cc8800] mb-[25px]"></div>
-              <p class="text-[#b7a793] text-[20px] tracking-wide mb-[20px]">
-                Công ty luật Đông Phương, chuyên cung cấp dịch vụ pháp lý chuyên nghiệp, tận tâm, hiệu quả.
-              <p class="text-[#858585] text-[17px] tracking-wide mb-[20px]">
-                Chúng tôi là một công ty luật hàng đầu tại Việt Nam, chuyên cung cấp các dịch vụ pháp lý đa dạng và chuyên nghiệp. Với đội ngũ luật sư giàu kinh nghiệm và am hiểu sâu sắc về pháp luật, chúng tôi cam kết mang đến cho khách hàng những giải pháp pháp lý hiệu quả nhất.
-              </p>
-              <a href="./about-us.html" class="btn-contact">
-                <span class="mr-2 text-[#b7a793] hover:text-[#cc8800]">Tìm hiểu thêm</span>
-                <i class="text-sm text-[#b7a793] hover:!text-[#cc8800] fas fa-long-arrow-alt-right animate__animated animate__slideInLeft animate__infinite infinite"></i>
-              </a>
-            </div>
-          </div>
-         </section>
-
-         <!-- review -->
+         <!-- us action -->
          <section id="review" class="mb-[50px] lg:mb-[130px]">
             <div class="container mx-auto">
               <div class="review-title__box text-center mb-[50px]">
@@ -604,6 +587,132 @@
             </div>
          </section>
 
+         <!-- why-choose -->
+         <section id="why-choose" class="mb-[50px] lg:mb-[130px]">
+          <div class="why-choose__box container flex justify-between items-center flex-col md:flex-row mx-auto gap-[80px]">
+            <div class="why-choose__left flex-1 px-4 md:px-0">
+              <img
+                  src="./assets/pictures/why-choost-img1.png"
+                  alt="Why choose us"
+                  class="w-full h-full"
+                />
+            </div>
+            <div class="why-choose__right flex-1 px-4 md:px-0">
+              <p class="text-[#a8a8a8] mb-[10px] text-[13px] md:text-[15px] uppercase tracking-wider">Chúng tôi là chuyên gia trong lĩnh vực gì?</p>
+              <h3 class="text-[#454545] font-bold text-[28px] md:text-[30px] mb-[25px] tracking-wide">Tại sao lại chọn chúng tôi</h3>
+              <div class="line w-[50px] h-[3px] bg-[#cc8800] mb-[25px]"></div>
+              <p class="text-[#b7a793] text-[20px] tracking-wide mb-[20px]">
+                Công ty luật Đông Phương, chuyên cung cấp dịch vụ pháp lý chuyên nghiệp, tận tâm, hiệu quả.
+              <p class="text-[#858585] text-[17px] tracking-wide mb-[20px]">
+                Chúng tôi là một công ty luật hàng đầu tại Việt Nam, chuyên cung cấp các dịch vụ pháp lý đa dạng và chuyên nghiệp. Với đội ngũ luật sư giàu kinh nghiệm và am hiểu sâu sắc về pháp luật, chúng tôi cam kết mang đến cho khách hàng những giải pháp pháp lý hiệu quả nhất.
+              </p>
+              <a href="./about-us.html" class="btn-contact">
+                <span class="mr-2 text-[#b7a793] hover:text-[#cc8800]">Tìm hiểu thêm</span>
+                <i class="text-sm text-[#b7a793] hover:!text-[#cc8800] fas fa-long-arrow-alt-right animate__animated animate__slideInLeft animate__infinite infinite"></i>
+              </a>
+            </div>
+          </div>
+         </section>
+
+         <!-- review -->
+          <section id="feedback" class="mb-[50px] lg:mb-[130px]">
+            <div class="container mx-auto">
+              <div class="feedback-title__box text-center mb-[50px]">
+                <p class="mb-[6px] text-[13px] md:text-[15px] text-[#747474] uppercase tracking-wider">TRẢI NGHIỆM KHÁCH HÀNG</p>
+                <h3 class="mb-[25px] font-bold tracking-wider text-[#282828] text-[28px] md:text-[30px] px-4 md:px-0">Trải nghiệm khách hàng</h3>
+                <div class="line w-[50px] h-[3px] bg-[#cc8800] mx-auto"></div>
+              </div>
+
+              <div class="swiper swiper-slider-feedback mx-auto">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-white p-[10px]">
+                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
+                      
+                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
+                        <img src="./assets/pictures/ban-quyen-tg.png" alt="" class="w-full h-full object-cover" />
+                      </div>
+                      
+                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
+                        <p class="leading-7">
+                          Tất nhiên, anh rất hạnh phúc khi chia sẻ về trải nghiệm của mình với dịch vụ Đăng ký bản quyền tác giả của DongPhuongLaw. Trải nghiệm này thực sự là một trải nghiệm tuyệt vời. DongPhuongLaw không chỉ có kiến thức sâu rộng về quy trình đăng ký bản quyền mà còn thể hiện sự tận tâm và chuyên nghiệp đáng kinh ngạc.
+                        </p>
+                        <p class="leading-7">
+                          Anh rất ấn tượng với cách DongPhuongLaw tận tâm hỗ trợ và hướng dẫn anh qua từng bước trong quy trình đăng ký bản quyền tác giả. Họ không chỉ giúp anh hiểu rõ về quy trình mà còn đưa ra những lời khuyên hữu ích để bảo vệ và tối ưu hóa quyền lợi tác giả của anh.
+                        </p>
+                        <p class="leading-7">
+                          Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
+                        </p>
+                        <p class="leading-7">
+                          Anh hoàn toàn hài lòng với dịch vụ Đăng ký bản quyền tác giả của DongPhuongLaw và tin tưởng vào khả năng chuyên nghiệp và tận tâm của họ trong việc bảo vệ quyền lợi tác giả.
+                        </p>
+                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
+                        <span class="text-[#858585]">
+                          Khách hàng cá nhân
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide bg-white p-[10px]">
+                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
+                      
+                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
+                        <img src="./assets/pictures/dkdt.png" alt="" class="w-full h-full object-cover" />
+                      </div>
+                      
+                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
+                        <p class="leading-7">
+                          Tôi rất đánh giá cao cách họ tư vấn và hỗ trợ. Họ không chỉ tập trung vào việc giải quyết vấn đề mà còn tập trung vào việc hiểu rõ mục tiêu và nhu cầu của khách hàng để đề xuất những giải pháp phù hợp nhất. Sự tận tâm và chuyên nghiệp trong việc này thực sự khiến tôi cảm thấy tin tưởng.
+                        </p>
+                        <p class="leading-7">
+                          Cuối cùng, dịch vụ của DongPhuongLaw không chỉ dừng lại ở việc cung cấp thông tin và tư vấn, mà còn là việc thực hiện các hành động cụ thể và đưa ra các bước tiến hành để tối ưu hóa đầu tư của tôi. Họ luôn sẵn lòng hỗ trợ và giải đáp mọi thắc mắc của tôi trong quá trình đầu tư.
+                        </p>
+                        <p class="leading-7">
+                          Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
+                        </p>
+                        <p class="leading-7">
+                          Tôi rất hài lòng với dịch vụ đầu tư của DongPhuongLaw và tin tưởng rằng họ là đối tác đáng tin cậy cho mọi người cần sự tư vấn và quản lý đầu tư chuyên nghiệp.
+                        </p>
+                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
+                        <span class="text-[#858585]">
+                          Khách hàng cá nhân
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide bg-white p-[10px]">
+                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
+                      
+                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
+                        <img src="./assets/pictures/dknh.png" alt="" class="w-full h-full object-cover" />
+                      </div>
+                      
+                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
+                        <p class="leading-7">
+                          Sự chuyên nghiệp và kiến thức sâu rộng về lĩnh vực đăng ký nhãn hiệu của đội ngũ luật sư tại MinaLaw thực sự ấn tượng. Họ không chỉ hướng dẫn tôi qua quy trình pháp lý mà còn giúp tôi hiểu rõ về tầm quan trọng của việc đăng ký và bảo vệ nhãn hiệu.
+                        </p>
+                        <p class="leading-7">
+                          Thứ hai, tôi rất đánh giá cao cách họ làm việc cùng tôi. Họ luôn lắng nghe và tôn trọng ý kiến của tôi, từ đó đưa ra các giải pháp phù hợp và đáp ứng đúng nhu cầu của mình. Sự tận tâm và chuyên nghiệp trong cách tiếp cận này thực sự làm tôi cảm thấy tin tưởng và thoải mái.
+                        </p>
+                        <p class="leading-7">
+                          Tôi rất hài lòng với dịch vụ đăng ký nhãn hiệu của MinaLaw và không ngần ngại khi khuyên bất kỳ ai cần sự tư vấn và hỗ trợ trong việc đăng ký nhãn hiệu nên chọn MinaLaw làm đối tác.
+                        </p>
+                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
+                        <span class="text-[#858585]">
+                          Khách hàng cá nhân
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-button-next text-[#ccc]"></div>
+                <div class="swiper-button-prev text-[#ccc]"></div>
+              </div>
+            </div>
+         </section>
+
         <!-- News -->
         <section
           id="news"
@@ -620,7 +729,7 @@
               TIN TỨC MỚI NHẤT
             </p>
             <h2
-              class="news-title__text font-bold text-[33px] text-center mb-6 text-[#161616]"
+              class="news-title__text font-bold text-[28px] md:text-[30px] text-center mb-6 text-[#161616]"
             >
               Bản tin pháp luật
             </h2>
@@ -923,7 +1032,7 @@
                   © Copyright 2024 DONGPHUONGLAW, All Right Reserved
                 </div>
                 <div class="footer-bottom__menu">
-                  <ul class="flex justify-center gap-4 hidden md:show">
+                  <ul class="flex justify-center gap-4 hidden md:flex">
                     <li>
                       <a
                         href="#"
@@ -1068,6 +1177,28 @@
           1024: {
             slidesPerView: 3,
           },
+        },
+      });
+  </script>
+
+    <!-- slider feedback -->
+  <script>
+      var swiper = new Swiper(".swiper-slider-feedback", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
       });
   </script>
