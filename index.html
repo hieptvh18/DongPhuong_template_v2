@@ -54,7 +54,7 @@
     <div class="wrapper-home">
       <!-- ====header===== -->
       <header class="header">
-        <section class="header__top hidden sm:block">
+        <section class="header__top hidden md:block">
           <div
             class="header__top-content container ml-auto mr-auto flex justify-between items-center pt-4 pb-4 md:px-4 lg:px-0"
           >
@@ -115,10 +115,15 @@
           <section
             class="header__main container h-auto ml-auto mr-auto flex justify-between items-center md:px-4 lg:px-0"
           >
-            <div id="header-main__menu" class="header-main__menu w-full flex justify-between items-center md:block">
-
+            <div
+              id="header-main__menu"
+              class="header-main__menu w-full flex justify-between items-center md:block"
+            >
               <!-- logo responsive -->
-               <a href="/" class="logo inline-block w-[100px] p-3 lg:w-[120px] md:hidden">
+              <a
+                href="/"
+                class="logo inline-block w-[100px] p-3 lg:w-[120px] md:hidden"
+              >
                 <img
                   src="./assets/pictures/logodp.png"
                   alt="Logo"
@@ -126,18 +131,22 @@
                 />
               </a>
 
-              <ul class="nav-bar flex flex-col lg:flex-row fixed lg:static items-center left-0 top-0 translate-x-[-100%] lg:translate-x-0 min-h-[100%] z-50 gap-7 lg:gap-0 py-[27px]"
+              <ul
+                class="nav-bar flex flex-col lg:flex-row fixed lg:static items-center left-0 top-0 translate-x-[-100%] lg:translate-x-0 min-h-[100%] z-50 gap-7 lg:gap-0 py-[27px]"
               >
-              <li>
-                <!-- logo responsive -->
-                <a href="/" class="logo inline-block w-[100px] p-3 lg:w-[120px] md:hidden">
-                  <img
-                    src="./assets/pictures/logodp.png"
-                    alt="Logo"
-                    class="w-full"
-                  />
-                </a>
-              </li>
+                <li>
+                  <!-- logo responsive -->
+                  <a
+                    href="/"
+                    class="logo inline-block w-[100px] p-3 lg:w-[120px] md:hidden"
+                  >
+                    <img
+                      src="./assets/pictures/logodp.png"
+                      alt="Logo"
+                      class="w-full"
+                    />
+                  </a>
+                </li>
                 <li>
                   <a
                     href=""
@@ -187,6 +196,13 @@
                     >Liên hệ</a
                   >
                 </li>
+                <li class="block md:hidden">
+                  <button
+                    class="btn-search btn-modal font-[500] flex items-center gap-3 hover:!text-gray p-2"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </li>
               </ul>
 
               <div class="menu-right">
@@ -198,8 +214,7 @@
 
             <div class="header-main__search hidden md:block">
               <button
-                id="btn-modal"
-                class="btn-search font-[500] flex items-center gap-3 hover:!text-gray p-2"
+                class="btn-search btn-modal font-[500] flex items-center gap-3 hover:!text-gray p-2"
               >
                 <i class="fas fa-search"></i>
               </button>
@@ -215,38 +230,73 @@
             <div class="swiper banner-main h-[60vh] md:h-[70vh] lg:h-[750px]">
               <div class="swiper-wrapper">
                 <div class="swiper-slide relative">
-                  
-                  <div class="banner-item__text absolute top-[20%]
-                   left-[10%] flex flex-col gap-5">
-                    <div class="line w-[55px] h-[3px] bg-[#191919] mb-2 bg-[#b6a188]"></div>
-                    <h3 class="font-bold text-label-banner text-[40px] md:text-[70px] animate__animated animate__fadeInUp animate__faster">Pháp lý, Chuyên nghiệp</h3>
-                    <p class="text-[#767676] text-[19px] mw-600 mb-5 animate__animated animate__fadeIn animate__faster">
-                      “Có hai sức mạnh mang đến sự yên ổn: pháp luật và đạo đức.”
+                  <div
+                    class="banner-item__text absolute top-[20%] left-[10%] flex flex-col gap-5"
+                  >
+                    <div
+                      class="line w-[55px] h-[3px] bg-[#191919] mb-2 bg-[#b6a188]"
+                    ></div>
+                    <h3
+                      class="font-bold text-label-banner text-[40px] md:text-[70px] animate__animated animate__fadeInUp animate__faster"
+                    >
+                      Pháp lý, Chuyên nghiệp
+                    </h3>
+                    <p
+                      class="text-[#767676] text-[19px] mw-600 mb-5 animate__animated animate__fadeIn animate__faster"
+                    >
+                      “Có hai sức mạnh mang đến sự yên ổn: pháp luật và đạo
+                      đức.”
                     </p>
-                    <div class="animate__animated animate__fadeInDown animate__delay-1s animate__faster">
-                      <a href="./contact.html" class="btn-main-banner hover:!bg-[#cc8800]">
-                      Liên hệ ngay
-                    </a>
+                    <div
+                      class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+                    >
+                      <a
+                        href="./contact.html"
+                        class="btn-main-banner hover:!bg-[#cc8800]"
+                      >
+                        Liên hệ ngay
+                      </a>
                     </div>
                   </div>
-                  
-                  <img src="./assets/pictures/banner-1.jpg" class="h-full w-full" />
+
+                  <img
+                    src="./assets/pictures/banner-1.jpg"
+                    class="h-full w-full"
+                  />
                 </div>
                 <div class="swiper-slide relative">
-                  <div class="banner-item__text absolute top-[20%]
-                   left-[10%] flex flex-col gap-5">
-                    <div class="line w-[55px] h-[3px] bg-[#191919] mb-2 bg-[#b6a188]"></div>
-                    <h3 class="font-bold text-label-banner text-[40px] md:text-[70px] animate__animated animate__fadeInUp animate__faster">"Bảo vệ quyền lợi công bằng</h3>
-                    <p class="text-[#767676] text-[19px] mw-600 mb-5 animate__animated animate__fadeIn animate__faster">
-                      “Có hai sức mạnh mang đến sự yên ổn: pháp luật và đạo đức.”
+                  <div
+                    class="banner-item__text absolute top-[20%] left-[10%] flex flex-col gap-5"
+                  >
+                    <div
+                      class="line w-[55px] h-[3px] bg-[#191919] mb-2 bg-[#b6a188]"
+                    ></div>
+                    <h3
+                      class="font-bold text-label-banner text-[40px] md:text-[70px] animate__animated animate__fadeInUp animate__faster"
+                    >
+                      "Bảo vệ quyền lợi công bằng
+                    </h3>
+                    <p
+                      class="text-[#767676] text-[19px] mw-600 mb-5 animate__animated animate__fadeIn animate__faster"
+                    >
+                      “Có hai sức mạnh mang đến sự yên ổn: pháp luật và đạo
+                      đức.”
                     </p>
-                    <div class="animate__animated animate__fadeInDown animate__delay-1s animate__faster">
-                      <a href="./contact.html" class="btn-main-banner hover:!bg-[#cc8800]">
-                      Liên hệ ngay
-                    </a>
+                    <div
+                      class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+                    >
+                      <a
+                        href="./contact.html"
+                        class="btn-main-banner hover:!bg-[#cc8800]"
+                      >
+                        Liên hệ ngay
+                      </a>
                     </div>
                   </div>
-                  <img src="./assets/pictures/banner-2.jpg" class="h-full w-full" />
+                  <img
+                    src="./assets/pictures/banner-2.jpg"
+                    class="h-full w-full"
+                  />
                 </div>
               </div>
 
@@ -315,7 +365,7 @@
         </section>
 
         <!-- our practice Area -->
-        <section class="our-practice-area__section mt-[60px] md:mt-[474px] lg:mt-[610px] mb-[50px] lg:mb-[130px]"
+        <!-- <section class="our-practice-area__section mt-[60px] md:mt-[474px] lg:mt-[610px] mb-[50px] lg:mb-[130px]"
         >
           <div
             class="practice-title__wrapper flex justify-center items-center gap-4 mb-[40px] lg:mb-[70px]"
@@ -455,16 +505,149 @@
               </div>
             </div>
           </div>
+        </section> -->
+
+        <!-- service -->
+        <section
+          id="service-area"
+          class="mt-[60px] md:mt-[474px] lg:mt-[610px] mb-[50px] lg:mb-[100px]"
+        >
+          <div class="container mx-auto">
+            <div
+            class="service-title__wrapper flex justify-center items-center gap-4 mb-[40px] lg:mb-[70px]"
+          >
+            <div class="line w-[20px] lg:w-[50px] h-[4px] bg-[#cc8800]"></div>
+            <h2
+              class="service-title font-bold text-[28px] lg:text-[30px] text-[#161616]"
+            >
+              Dịch vụ cung cấp
+            </h2>
+            <div class="line w-[20px] lg:w-[50px] h-[4px] bg-[#cc8800]"></div>
+          </div>
+          <div class="service-content grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2023/12/hinh-anh_2023-12-04_170147114.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                Doanh Nghiệp
+              </a>
+            </div>
+
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2023/12/hinh-anh_2023-12-05_030008173.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                SỞ HỮU TRÍ TUỆ
+              </a>
+            </div>
+
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2024/01/hinh-anh_2024-01-16_085254651.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                ĐẤT ĐAI
+              </a>
+            </div>
+
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2024/01/8c30853e-5eae-4193-9ffb-8b430853fa77.webp');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                DÂN SỰ
+              </a>
+            </div>
+
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2024/01/hinh-anh_2024-01-16_110533324.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                HÌNH SỰ
+              </a>
+            </div>
+
+            <div
+              class="service-content__item rounded-md uppercase w-full h-[250px] md:h-[200px] lg:h-[250px] relative overflow-hidden"
+            >
+              <div
+                class="bg-img w-full h-full"
+                style="
+                  background-image: url('https://minalaw.vn/wp-content/uploads/2024/01/hinh-anh_2024-01-16_110305124.png');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="absolute inset-0 bg-black/40 z-10"></div>
+              <a href="./blog.html"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-white text-[25px] lg:text-[30px] font-bold text-center"
+              >
+                HÔN NHÂN
+              </a>
+            </div>
+          </div>
         </section>
 
         <!-- Form contact -->
-        <section id="form-contact-wrapper" class="form-contact-wrapper h-auto p-[20px] lg:p-[60px] flex justify-center items-center mb-[50px] lg:mb-[130px]"
+        <section
+          id="form-contact-wrapper"
+          class="form-contact-wrapper h-auto p-[20px] lg:p-[60px] flex justify-center items-center mb-[50px] lg:mb-[130px]"
         >
           <div class="form-contact-wrapper w-full full-line md:p-[50px]">
-            <section
-              id="form-contact"
-              class="w-full"
-            >
+            <section id="form-contact" class="w-full">
               <div
                 class="form-contact__box px-[10px] lg:px-[60px] py-[20px] lg:py-[30px] w-full lg:w-[805px] mx-auto rounded-sm"
               >
@@ -476,8 +659,10 @@
                 >
                   Luật pháp vô cùng phức tạp, Nó có thể khiến bạn gặp rắc rối
                 </p>
-                <p class="text-center mb-7 text-[#cdcdcd]">Hãy để chúng tôi giúp bạn.</p>
-  
+                <p class="text-center mb-7 text-[#cdcdcd]">
+                  Hãy để chúng tôi giúp bạn.
+                </p>
+
                 <!-- form -->
                 <form action="/" method="GET" class="flex flex-col gap-[20px]">
                   <div class="form-group">
@@ -509,7 +694,7 @@
                       rows="6"
                     ></textarea>
                   </div>
-  
+
                   <button
                     type="submit"
                     class="w-full bg-[#b1976b] border-none py-[15px] font-bold text-white hover:bg-[#90785b]"
@@ -522,222 +707,365 @@
           </div>
         </section>
 
-         <!-- us action -->
-         <section id="review" class="mb-[50px] lg:mb-[130px]">
-            <div class="container mx-auto">
-              <div class="review-title__box text-center mb-[50px]">
-                <p class="mb-[6px] text-[13px] md:text-[15px] text-[#747474] uppercase tracking-wider">Công việc của chúng tôi</p>
-                <h3 class="mb-[25px] font-bold tracking-wider text-[#282828] text-[28px] md:text-[30px] px-4 md:px-0">Chúng tôi sẽ can thiệp giúp bạn</h3>
-                <div class="line w-[50px] h-[3px] bg-[#cc8800] mx-auto"></div>
-              </div>
+        <!-- us action -->
+        <section id="review" class="mb-[50px] lg:mb-[130px]">
+          <div class="container mx-auto">
+            <div class="review-title__box text-center mb-[50px]">
+              <p
+                class="mb-[6px] text-[13px] md:text-[15px] text-[#747474] uppercase tracking-wider"
+              >
+                Công việc của chúng tôi
+              </p>
+              <h3
+                class="mb-[25px] font-bold tracking-wider text-[#282828] text-[28px] md:text-[30px] px-4 md:px-0"
+              >
+                Chúng tôi sẽ can thiệp giúp bạn
+              </h3>
+              <div class="line w-[50px] h-[3px] bg-[#cc8800] mx-auto"></div>
+            </div>
 
-              <div class="swiper swiper-slider-review mx-auto">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide bg-white p-[10px]">
-                    <div class="review-item rounded-md pb-[30px]">
-                      <div class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]">
-                        <img src="./assets/pictures/lyhon.jpg" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      <h3 class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]">Ly hôn</h3>
-                      <p class="text-center text-[16px] px-[15px]">
-                        Tư vấn pháp lý ly hôn.
-                      </p>
+            <div class="swiper swiper-slider-review mx-auto">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div class="review-item rounded-md pb-[30px]">
+                    <div
+                      class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]"
+                    >
+                      <img
+                        src="./assets/pictures/lyhon.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
                     </div>
-                  </div>
-
-                  <div class="swiper-slide bg-white p-[10px]">
-                    <div class="review-item rounded-md pb-[30px]">
-                      <div class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]">
-                        <img src="./assets/pictures/chung.jpg" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      <h3 class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]">Giấy phép con</h3>
-                      <p class="text-center text-[16px] px-[15px]">
-                        Tư vấn pháp lý ly hôn.
-                      </p>
-                    </div>
-                  </div>
-
-                   <div class="swiper-slide bg-white p-[10px]">
-                    <div class="review-item rounded-md pb-[30px]">
-                      <div class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]">
-                        <img src="./assets/pictures/xu-li-no.png" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      <h3 class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]">Pháp lý tài sản</h3>
-                      <p class="text-center text-[16px] px-[15px]">
-                        Xử lý pháp lý tài sản
-                      </p>
-                    </div>
-                  </div>
-
-                   <div class="swiper-slide bg-white p-[10px]">
-                    <div class="review-item rounded-md pb-[30px]">
-                      <div class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]">
-                        <img src="./assets/pictures/da-su.png" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      <h3 class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]">Pháp lý dân sự</h3>
-                      <p class="text-center text-[16px] px-[15px]">
-                        Tư vấn pháp lý dân sự
-                      </p>
-                    </div>
+                    <h3
+                      class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]"
+                    >
+                      Ly hôn
+                    </h3>
+                    <p class="text-center text-[16px] px-[15px]">
+                      Tư vấn pháp lý ly hôn.
+                    </p>
                   </div>
                 </div>
-                <div class="swiper-button-next text-white"></div>
-                <div class="swiper-button-prev text-white"></div>
-              </div>
-            </div>
-         </section>
 
-         <!-- why-choose -->
-         <section id="why-choose" class="mb-[50px] lg:mb-[130px]">
-          <div class="why-choose__box container flex justify-between items-center flex-col md:flex-row mx-auto gap-[80px]">
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div class="review-item rounded-md pb-[30px]">
+                    <div
+                      class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]"
+                    >
+                      <img
+                        src="./assets/pictures/chung.jpg"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3
+                      class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]"
+                    >
+                      Giấy phép con
+                    </h3>
+                    <p class="text-center text-[16px] px-[15px]">
+                      Tư vấn pháp lý ly hôn.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div class="review-item rounded-md pb-[30px]">
+                    <div
+                      class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]"
+                    >
+                      <img
+                        src="./assets/pictures/xu-li-no.png"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3
+                      class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]"
+                    >
+                      Pháp lý tài sản
+                    </h3>
+                    <p class="text-center text-[16px] px-[15px]">
+                      Xử lý pháp lý tài sản
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div class="review-item rounded-md pb-[30px]">
+                    <div
+                      class="review-item__img h-[230px] md:h-[250px] rounded-md overflow-hidden mb-[40px]"
+                    >
+                      <img
+                        src="./assets/pictures/da-su.png"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3
+                      class="text-center mb-3 px-[15px] text-[18px] font-bold text-[#191919]"
+                    >
+                      Pháp lý dân sự
+                    </h3>
+                    <p class="text-center text-[16px] px-[15px]">
+                      Tư vấn pháp lý dân sự
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next text-white"></div>
+              <div class="swiper-button-prev text-white"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- why-choose -->
+        <section id="why-choose" class="mb-[50px] lg:mb-[130px]">
+          <div
+            class="why-choose__box container flex justify-between items-center flex-col md:flex-row mx-auto gap-[80px]"
+          >
             <div class="why-choose__left flex-1 px-4 md:px-0">
               <img
-                  src="./assets/pictures/why-choost-img1.png"
-                  alt="Why choose us"
-                  class="w-full h-full"
-                />
+                src="./assets/pictures/why-choost-img1.png"
+                alt="Why choose us"
+                class="w-full h-full"
+              />
             </div>
             <div class="why-choose__right flex-1 px-4 md:px-0">
-              <p class="text-[#a8a8a8] mb-[10px] text-[13px] md:text-[15px] uppercase tracking-wider">Chúng tôi là chuyên gia trong lĩnh vực gì?</p>
-              <h3 class="text-[#454545] font-bold text-[28px] md:text-[30px] mb-[25px] tracking-wide">Tại sao lại chọn chúng tôi</h3>
+              <p
+                class="text-[#a8a8a8] mb-[10px] text-[13px] md:text-[15px] uppercase tracking-wider"
+              >
+                Chúng tôi là chuyên gia trong lĩnh vực gì?
+              </p>
+              <h3
+                class="text-[#454545] font-bold text-[28px] md:text-[30px] mb-[25px] tracking-wide"
+              >
+                Tại sao lại chọn chúng tôi
+              </h3>
               <div class="line w-[50px] h-[3px] bg-[#cc8800] mb-[25px]"></div>
               <p class="text-[#b7a793] text-[20px] tracking-wide mb-[20px]">
-                Công ty luật Đông Phương, chuyên cung cấp dịch vụ pháp lý chuyên nghiệp, tận tâm, hiệu quả.
+                Công ty luật Đông Phương, chuyên cung cấp dịch vụ pháp lý chuyên
+                nghiệp, tận tâm, hiệu quả.
+              </p>
+
               <p class="text-[#858585] text-[17px] tracking-wide mb-[20px]">
-                Chúng tôi là một công ty luật hàng đầu tại Việt Nam, chuyên cung cấp các dịch vụ pháp lý đa dạng và chuyên nghiệp. Với đội ngũ luật sư giàu kinh nghiệm và am hiểu sâu sắc về pháp luật, chúng tôi cam kết mang đến cho khách hàng những giải pháp pháp lý hiệu quả nhất.
+                Chúng tôi là một công ty luật hàng đầu tại Việt Nam, chuyên cung
+                cấp các dịch vụ pháp lý đa dạng và chuyên nghiệp. Với đội ngũ
+                luật sư giàu kinh nghiệm và am hiểu sâu sắc về pháp luật, chúng
+                tôi cam kết mang đến cho khách hàng những giải pháp pháp lý hiệu
+                quả nhất.
               </p>
               <a href="./about-us.html" class="btn-contact">
-                <span class="mr-2 text-[#b7a793] hover:text-[#cc8800]">Tìm hiểu thêm</span>
-                <i class="text-sm text-[#b7a793] hover:!text-[#cc8800] fas fa-long-arrow-alt-right animate__animated animate__slideInLeft animate__infinite infinite"></i>
+                <span class="mr-2 text-[#b7a793] hover:text-[#cc8800]"
+                  >Tìm hiểu thêm</span
+                >
+                <i
+                  class="text-sm text-[#b7a793] hover:!text-[#cc8800] fas fa-long-arrow-alt-right animate__animated animate__slideInLeft animate__infinite infinite"
+                ></i>
               </a>
             </div>
           </div>
-         </section>
+        </section>
 
-         <!-- review -->
-          <section id="feedback" class="mb-[50px] lg:mb-[130px]">
-            <div class="container mx-auto">
-              <div class="feedback-title__box text-center mb-[50px]">
-                <p class="mb-[6px] text-[13px] md:text-[15px] text-[#747474] uppercase tracking-wider">TRẢI NGHIỆM KHÁCH HÀNG</p>
-                <h3 class="mb-[25px] font-bold tracking-wider text-[#282828] text-[28px] md:text-[30px] px-4 md:px-0">Trải nghiệm khách hàng</h3>
-                <div class="line w-[50px] h-[3px] bg-[#cc8800] mx-auto"></div>
-              </div>
-
-              <div class="swiper swiper-slider-feedback mx-auto">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide bg-white p-[10px]">
-                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
-                      
-                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
-                        <img src="./assets/pictures/ban-quyen-tg.png" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      
-                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
-                        <p class="leading-7">
-                          Tất nhiên, anh rất hạnh phúc khi chia sẻ về trải nghiệm của mình với dịch vụ Đăng ký bản quyền tác giả của DongPhuongLaw. Trải nghiệm này thực sự là một trải nghiệm tuyệt vời. DongPhuongLaw không chỉ có kiến thức sâu rộng về quy trình đăng ký bản quyền mà còn thể hiện sự tận tâm và chuyên nghiệp đáng kinh ngạc.
-                        </p>
-                        <p class="leading-7">
-                          Anh rất ấn tượng với cách DongPhuongLaw tận tâm hỗ trợ và hướng dẫn anh qua từng bước trong quy trình đăng ký bản quyền tác giả. Họ không chỉ giúp anh hiểu rõ về quy trình mà còn đưa ra những lời khuyên hữu ích để bảo vệ và tối ưu hóa quyền lợi tác giả của anh.
-                        </p>
-                        <p class="leading-7">
-                          Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
-                        </p>
-                        <p class="leading-7">
-                          Anh hoàn toàn hài lòng với dịch vụ Đăng ký bản quyền tác giả của DongPhuongLaw và tin tưởng vào khả năng chuyên nghiệp và tận tâm của họ trong việc bảo vệ quyền lợi tác giả.
-                        </p>
-                        <p class="review-stars">
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                        </p>
-                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
-                        <span class="text-[#858585]">
-                          Khách hàng cá nhân
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide bg-white p-[10px]">
-                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
-                      
-                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
-                        <img src="./assets/pictures/dkdt.png" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      
-                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
-                        <p class="leading-7">
-                          Tôi rất đánh giá cao cách họ tư vấn và hỗ trợ. Họ không chỉ tập trung vào việc giải quyết vấn đề mà còn tập trung vào việc hiểu rõ mục tiêu và nhu cầu của khách hàng để đề xuất những giải pháp phù hợp nhất. Sự tận tâm và chuyên nghiệp trong việc này thực sự khiến tôi cảm thấy tin tưởng.
-                        </p>
-                        <p class="leading-7">
-                          Cuối cùng, dịch vụ của DongPhuongLaw không chỉ dừng lại ở việc cung cấp thông tin và tư vấn, mà còn là việc thực hiện các hành động cụ thể và đưa ra các bước tiến hành để tối ưu hóa đầu tư của tôi. Họ luôn sẵn lòng hỗ trợ và giải đáp mọi thắc mắc của tôi trong quá trình đầu tư.
-                        </p>
-                        <p class="leading-7">
-                          Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
-                        </p>
-                        <p class="leading-7">
-                          Tôi rất hài lòng với dịch vụ đầu tư của DongPhuongLaw và tin tưởng rằng họ là đối tác đáng tin cậy cho mọi người cần sự tư vấn và quản lý đầu tư chuyên nghiệp.
-                        </p>
-                        <p class="review-stars">
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                        </p>
-                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
-                        <span class="text-[#858585]">
-                          Khách hàng cá nhân
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide bg-white p-[10px]">
-                    <div class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col">
-                      
-                      <div class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]">
-                        <img src="./assets/pictures/dknh.png" alt="" class="w-full h-full object-cover" />
-                      </div>
-                      
-                      <div class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]">
-                        <p class="leading-7">
-                          Sự chuyên nghiệp và kiến thức sâu rộng về lĩnh vực đăng ký nhãn hiệu của đội ngũ luật sư tại MinaLaw thực sự ấn tượng. Họ không chỉ hướng dẫn tôi qua quy trình pháp lý mà còn giúp tôi hiểu rõ về tầm quan trọng của việc đăng ký và bảo vệ nhãn hiệu.
-                        </p>
-                        <p class="leading-7">
-                          Thứ hai, tôi rất đánh giá cao cách họ làm việc cùng tôi. Họ luôn lắng nghe và tôn trọng ý kiến của tôi, từ đó đưa ra các giải pháp phù hợp và đáp ứng đúng nhu cầu của mình. Sự tận tâm và chuyên nghiệp trong cách tiếp cận này thực sự làm tôi cảm thấy tin tưởng và thoải mái.
-                        </p>
-                        <p class="leading-7">
-                          Tôi rất hài lòng với dịch vụ đăng ký nhãn hiệu của MinaLaw và không ngần ngại khi khuyên bất kỳ ai cần sự tư vấn và hỗ trợ trong việc đăng ký nhãn hiệu nên chọn MinaLaw làm đối tác.
-                        </p>
-                        <p class="review-stars">
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                          <i class="fas fa-star text-[#ff7b00]"></i>
-                        </p>
-                        <p class="font-bold mt-3 mb-3 text-[18px]">Nguyễn Văn Hạnh</p>
-                        <span class="text-[#858585]">
-                          Khách hàng cá nhân
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="swiper-button-next text-[#ccc]"></div>
-                <div class="swiper-button-prev text-[#ccc]"></div>
-              </div>
+        <!-- review -->
+        <section id="feedback" class="mb-[50px] lg:mb-[130px]">
+          <div class="container mx-auto">
+            <div class="feedback-title__box text-center mb-[50px]">
+              <p
+                class="mb-[6px] text-[13px] md:text-[15px] text-[#747474] uppercase tracking-wider"
+              >
+                TRẢI NGHIỆM KHÁCH HÀNG
+              </p>
+              <h3
+                class="mb-[25px] font-bold tracking-wider text-[#282828] text-[28px] md:text-[30px] px-4 md:px-0"
+              >
+                Trải nghiệm khách hàng
+              </h3>
+              <div class="line w-[50px] h-[3px] bg-[#cc8800] mx-auto"></div>
             </div>
-         </section>
+
+            <div class="swiper swiper-slider-feedback mx-auto">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div
+                    class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col"
+                  >
+                    <div
+                      class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]"
+                    >
+                      <img
+                        src="./assets/pictures/ban-quyen-tg.png"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div
+                      class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]"
+                    >
+                      <p class="leading-7">
+                        Tất nhiên, anh rất hạnh phúc khi chia sẻ về trải nghiệm
+                        của mình với dịch vụ Đăng ký bản quyền tác giả của
+                        DongPhuongLaw. Trải nghiệm này thực sự là một trải
+                        nghiệm tuyệt vời. DongPhuongLaw không chỉ có kiến thức
+                        sâu rộng về quy trình đăng ký bản quyền mà còn thể hiện
+                        sự tận tâm và chuyên nghiệp đáng kinh ngạc.
+                      </p>
+                      <p class="leading-7">
+                        Anh rất ấn tượng với cách DongPhuongLaw tận tâm hỗ trợ
+                        và hướng dẫn anh qua từng bước trong quy trình đăng ký
+                        bản quyền tác giả. Họ không chỉ giúp anh hiểu rõ về quy
+                        trình mà còn đưa ra những lời khuyên hữu ích để bảo vệ
+                        và tối ưu hóa quyền lợi tác giả của anh.
+                      </p>
+                      <p class="leading-7">
+                        Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm
+                        cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ
+                        nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt
+                        nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
+                      </p>
+                      <p class="leading-7">
+                        Anh hoàn toàn hài lòng với dịch vụ Đăng ký bản quyền tác
+                        giả của DongPhuongLaw và tin tưởng vào khả năng chuyên
+                        nghiệp và tận tâm của họ trong việc bảo vệ quyền lợi tác
+                        giả.
+                      </p>
+                      <p class="review-stars">
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                      </p>
+                      <p class="font-bold mt-3 mb-3 text-[18px]">
+                        Nguyễn Văn Hạnh
+                      </p>
+                      <span class="text-[#858585]"> Khách hàng cá nhân </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div
+                    class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col"
+                  >
+                    <div
+                      class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]"
+                    >
+                      <img
+                        src="./assets/pictures/dkdt.png"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div
+                      class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]"
+                    >
+                      <p class="leading-7">
+                        Tôi rất đánh giá cao cách họ tư vấn và hỗ trợ. Họ không
+                        chỉ tập trung vào việc giải quyết vấn đề mà còn tập
+                        trung vào việc hiểu rõ mục tiêu và nhu cầu của khách
+                        hàng để đề xuất những giải pháp phù hợp nhất. Sự tận tâm
+                        và chuyên nghiệp trong việc này thực sự khiến tôi cảm
+                        thấy tin tưởng.
+                      </p>
+                      <p class="leading-7">
+                        Cuối cùng, dịch vụ của DongPhuongLaw không chỉ dừng lại
+                        ở việc cung cấp thông tin và tư vấn, mà còn là việc thực
+                        hiện các hành động cụ thể và đưa ra các bước tiến hành
+                        để tối ưu hóa đầu tư của tôi. Họ luôn sẵn lòng hỗ trợ và
+                        giải đáp mọi thắc mắc của tôi trong quá trình đầu tư.
+                      </p>
+                      <p class="leading-7">
+                        Điều anh đánh giá cao nhất là sự chu đáo và sự quan tâm
+                        cá nhân của DongPhuongLaw. Họ luôn lắng nghe và hiểu rõ
+                        nhu cầu cụ thể của anh, từ đó đưa ra các giải pháp tốt
+                        nhất để bảo vệ quyền lợi tác giả một cách toàn diện.
+                      </p>
+                      <p class="leading-7">
+                        Tôi rất hài lòng với dịch vụ đầu tư của DongPhuongLaw và
+                        tin tưởng rằng họ là đối tác đáng tin cậy cho mọi người
+                        cần sự tư vấn và quản lý đầu tư chuyên nghiệp.
+                      </p>
+                      <p class="review-stars">
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                      </p>
+                      <p class="font-bold mt-3 mb-3 text-[18px]">
+                        Nguyễn Văn Hạnh
+                      </p>
+                      <span class="text-[#858585]"> Khách hàng cá nhân </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-white p-[10px]">
+                  <div
+                    class="feedback-item rounded-md pb-[30px] flex justify-center md:flex-row flex-col"
+                  >
+                    <div
+                      class="feedback-item__img h-[300px] md:h-[500px] w-full md:w-[45%]"
+                    >
+                      <img
+                        src="./assets/pictures/dknh.png"
+                        alt=""
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div
+                      class="customer-feedback mt-[20px] md:mt-0 w-full md:w-[55%] px-[10px] md:px-[40px]"
+                    >
+                      <p class="leading-7">
+                        Sự chuyên nghiệp và kiến thức sâu rộng về lĩnh vực đăng
+                        ký nhãn hiệu của đội ngũ luật sư tại MinaLaw thực sự ấn
+                        tượng. Họ không chỉ hướng dẫn tôi qua quy trình pháp lý
+                        mà còn giúp tôi hiểu rõ về tầm quan trọng của việc đăng
+                        ký và bảo vệ nhãn hiệu.
+                      </p>
+                      <p class="leading-7">
+                        Thứ hai, tôi rất đánh giá cao cách họ làm việc cùng tôi.
+                        Họ luôn lắng nghe và tôn trọng ý kiến của tôi, từ đó đưa
+                        ra các giải pháp phù hợp và đáp ứng đúng nhu cầu của
+                        mình. Sự tận tâm và chuyên nghiệp trong cách tiếp cận
+                        này thực sự làm tôi cảm thấy tin tưởng và thoải mái.
+                      </p>
+                      <p class="leading-7">
+                        Tôi rất hài lòng với dịch vụ đăng ký nhãn hiệu của
+                        MinaLaw và không ngần ngại khi khuyên bất kỳ ai cần sự
+                        tư vấn và hỗ trợ trong việc đăng ký nhãn hiệu nên chọn
+                        MinaLaw làm đối tác.
+                      </p>
+                      <p class="review-stars">
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                        <i class="fas fa-star text-[#ff7b00]"></i>
+                      </p>
+                      <p class="font-bold mt-3 mb-3 text-[18px]">
+                        Nguyễn Văn Hạnh
+                      </p>
+                      <span class="text-[#858585]"> Khách hàng cá nhân </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next text-[#ccc]"></div>
+              <div class="swiper-button-prev text-[#ccc]"></div>
+            </div>
+          </div>
+        </section>
 
         <!-- News -->
         <section
           id="news"
-          class="mt-[] relative min-h-[2550px] md:min-h-[3800px] lg:min-h-[1110px]"
+          class="mt-[] relative min-h-[2650px] md:min-h-[3800px] lg:min-h-[1310px]"
         >
           <div
             class="bg-image absolute top-0 left-0 w-full h-full z-10"
@@ -913,10 +1241,7 @@
       </main>
 
       <!-- Social icon contact demo -->
-      <div
-        id="social-contact-icon"
-        class="fixed left-4 bottom-[100px] z-20"
-      >
+      <div id="social-contact-icon" class="fixed left-4 bottom-[100px] z-20">
         <div class="flex flex-col gap-3">
           <a
             href="#"
@@ -957,7 +1282,8 @@
           <div class="footer-wrapper">
             <div class="footer__top-wrapper bg-[#1d1d1d] flex justify-center">
               <div
-                class="footer__top flex flex-col md:flex-row gap-7 lg:gap-5 py-[30px] lg:py-[70px] px-4 md:px-0 bg-[#1d1d1d] container">
+                class="footer__top flex flex-col md:flex-row gap-7 lg:gap-5 py-[30px] lg:py-[70px] px-4 md:px-0 bg-[#1d1d1d] container"
+              >
                 <div class="footer__top-item flex-1">
                   <div class="logo-footer w-[200px] mb-4 m-auto md:ml-0">
                     <img
@@ -1002,7 +1328,9 @@
                   <p class="footer__address mb-4 text-[#ababab]">
                     +84 936 061 359
                   </p>
-                  <p class="footer__address text-[#ababab] mb-4">info@gmail.com</p>
+                  <p class="footer__address text-[#ababab] mb-4">
+                    info@gmail.com
+                  </p>
                   <p class="footer__address text-[#ababab] mb-2">
                     <span class="font-bold">MST: </span><span>0109011930</span>
                   </p>
@@ -1048,8 +1376,12 @@
               </div>
             </div>
             <div class="footer__bottom-wrapper bg-[#111] flex justify-center">
-              <div class="footer__bottom py-[38px] flex justify-between items-center container">
-                <div class="footer__bottom-coppy-right text-center text-[#A3A3A3] tracking-widest text-sm">
+              <div
+                class="footer__bottom py-[38px] flex justify-between items-center container"
+              >
+                <div
+                  class="footer__bottom-coppy-right text-center text-[#A3A3A3] tracking-widest text-sm"
+                >
                   © Copyright 2024 DONGPHUONGLAW, All Right Reserved
                 </div>
                 <div class="footer-bottom__menu">
@@ -1200,10 +1532,10 @@
           },
         },
       });
-  </script>
+    </script>
 
     <!-- slider feedback -->
-  <script>
+    <script>
       var swiper = new Swiper(".swiper-slider-feedback", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -1222,6 +1554,6 @@
           disableOnInteraction: false,
         },
       });
-  </script>
+    </script>
   </body>
 </html>
