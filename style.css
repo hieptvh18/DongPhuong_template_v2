@@ -256,7 +256,7 @@ section#review .review-item__img img:hover{
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-  position: absolute;
+  position: fixed; /* Đổi từ absolute sang fixed để modal luôn ở giữa màn hình khi scroll */
   padding: 50px 30px;
   background: #fff;
   border-radius: 5px;
